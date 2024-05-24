@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background-color: #F9EEFF;
+}
+.backgroundImg{
+    width: 100%;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    width: 40%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+}
+.container .header{
+    display: flex;
+    margin-bottom: 40px;
+}
+.container .header h1{
+    font-size: 50px;
+    margin-left: 20px;
+}
+.container .faq{
+    margin: 20px 0;
+}
+.container .faq .titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .faq .titles img{
+    cursor: pointer;
+}
+.container .faq .titles h3{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container .faq .titles h3:hover{
+    color: #AD28EF;
+}
+.container .faq p{
+    display: none;
+    color: #A49EA5;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container{
+        width: 70%;
+        top: 20%;
+    }
+    .backgroundImg{
+        height: 200px;
+        object-fit: cover;
+    }
+}
+@media (min-width:768px){
+    .container{
+        width: 70%;
+        top: 20%;
+    }
+    .backgroundImg{
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        width: 40%;
+    }
+}
